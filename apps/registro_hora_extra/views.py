@@ -1,3 +1,9 @@
 from django.shortcuts import render
+from .models import RegistroHoraExtra
 
-# Create your views here.
+from django.views.generic import ListView
+
+
+class HoraExtraList(ListView):
+    model = RegistroHoraExtra
+
